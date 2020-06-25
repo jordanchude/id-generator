@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fake ID Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <h1>Fake ID Generator</h1>
+    <!-- <form> -->
+      <div>
+        <label for="Name">Full Name</label>
+        <input type="text" name="Name" id="name">
+      </div>
+      <div>
+        <label for="Birthday">Birthday</label>
+        <input type ="date" name ="Birthday" id="birthday">
+      </div>
+      <div>
+        <label for="Feet">Height (Feet)</label>
+        <input type="number" name="Feet" id="feet">
+      </div>
+      <div>
+        <label for="Inches">Height (Inches)</label>
+        <input type="number" name="Inches" id="inches"><br/>
+        <button id="reset">Reset</button>
+      </div>
+      <button id="submit">Submit</button><br/>
+    </form>
+    <div id="disappear">
+    <ul id="id-list">
+      <li id="state"></li>
+    </ul>
+    </div>
+  <!-- </form> -->
+
+  <script src="constructor.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
