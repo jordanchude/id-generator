@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- title name -->
+    <!-- website title -->
     <title>Fake ID Generator</title>
-    <!-- linking to css page -->
+    <!-- link to styles.css page -->
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
-    <!-- header -->
-    <h1>Fake ID Generator</h1>
-    <img  id="mclovin" src="https://images-na.ssl-images-amazon.com/images/I/610V3qI8M2L._AC_SY355_.jpg">
-    <!-- our labels and input types -->
+    <header>
+      <h1>Fake ID Generator</h1>
+      <h3>Read more on <a href="https://bit.ly/3eB87hx">Jordan</a> and <a href="https://itzkwokagain.wordpress.com/2020/06/26/the-fake-id-generator/">Kwok's</a> blogs</h3>
+      <img  id="mclovin" src="https://images-na.ssl-images-amazon.com/images/I/610V3qI8M2L._AC_SY355_.jpg">
+    </header>
+    
+    <!-- labels and input types -->
     <div>
       <!-- label and input type for name -->
       <label for="Name">Full Name</label>
@@ -32,19 +35,25 @@
       <label for="Inches">Height (Inches)</label>
       <input type="number" name="Inches" id="inches">
     </div>
+    <div>
+      <label for="photo">ID Photo (Image URL)<label>
+      <input type="url" name="photo" id="photo">
+    </div>
     <!-- submit button -->
     <button id="submit">Submit</button><br/>
     <!-- reset button -->
     <button id="reset">Reset</button><br/>
+    
     <!-- our list will appear and disappear based on form submitting -->
     <div id="disappear">
-      <ul id="id-list">
-        <!-- state is already randomized and not an input value, so we need a list first to put it in instead of creating a new one -->
-        <li id="state"></li>
+      <ul class="id-list"> <!-- information is created and appended here -->
+        <li id="state"></li> <!-- state is randomized and inserted here -->
       </ul>
     </div>
-<!-- scripts that link us to our JavaScript files -->
+    
+<!-- Javascript Scripts -->
   <script src="constructor.js"></script>
   <script src="script.js"></script>
+  <script src="stateBackground.js"></script>
   </body>
 </html>
